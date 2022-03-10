@@ -1,0 +1,121 @@
+Variables
+=======================
+Variables provide a way to store & access data in your program
+    Data within can be anything/vary (Variable)
+    Alias to data in memory
+    Storing data to a variable is called assignment
+Variables have multiple components:
+    Name 
+    Data (or lack thereof)
+    Type
+
+
+
+Creation
+=======================
+var example = 3
+var example int = 3
+
+var example int
+example = 3
+
+
+
+
+Compound Creation
+======================
+var a, b, c = 1, 2, "sample"
+
+
+
+Block Creation
+=====================
+var (
+    a int = 1
+    b int = 2
+    c = "sample"
+)
+
+
+Create & Assign Shortcut
+====================
+example := 3
+a, b := 1, "sample"
+
+: is create symbol
+= is assign 
+
+
+Other 
+====================
+Variables can be reassigned & assigned to other variables:
+
+a := 1
+a = 2
+a = 3
+
+This case, a is being reassigned after it was initially assigned 1
+
+
+a := 1
+b := a 
+var c = b 
+
+This case, b is a literal copy of a, meaning if a gets reassigned later then b is still 1. b will not be affected by any changes to a 
+
+
+Variable names can only be used once per scope:
+a := 1
+var a = 5
+
+This will not work since a was already created 
+
+
+
+
+Defaults
+====================
+Variables that are declared but not assigned will autopmatically have a default value
+
+    var name string
+
+String default: ""
+Number default: 0
+Other default: nil
+
+
+
+Comma ok
+===================
+"Comma, ok" idiom is a special case
+Allows a variable to be reassigned in a creation statement
+
+a, b := 1, 2
+c, b := 3, 4
+
+
+Naming
+=================
+Go variable naming convention is camelCase:
+    myLongVariableName := "hi"
+
+Use names appropriate for the data:
+
+    //Good
+    totalGuests := 12
+
+    //Bad
+    ttl := 12
+
+
+
+Constants
+================
+Constants can be created using the const keyword
+Useful when declaring some value that needs to be utilized throughout some or all of the program
+
+    const MaxSpeed = 30
+    const MinPurchasePrice = 7.50
+    const AppAuthor = "Bob"
+
+    
