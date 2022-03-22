@@ -72,6 +72,14 @@ This will not work since a was already created
 
 
 
+Ignoring Variables
+====================
+To ignore a variable, assign it to an underscore
+
+_ = "!"
+
+
+
 
 Defaults
 ====================
