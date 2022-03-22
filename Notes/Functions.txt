@@ -1,0 +1,21 @@
+Functions
+=============
+Most basic building block of Go programs
+Allows functionality to be isolated, which makes programs easier to:
+    Test, debug, extend, modify, read, write, document
+Functions are simple: they take data as input and return data as output
+    Input and output data is optional
+
+Ex:
+==========INPUT DATA================OUTPUT DATA TYPE====
+func name (param1 type, param2 type) type {
+    //body 
+}
+
+//The type at the end is the output data
+
+Ex:
+func sum (lhs, rhs int) int {
+    return lhs + rhs
+}
+// Can have multiple parameter with the same data type
