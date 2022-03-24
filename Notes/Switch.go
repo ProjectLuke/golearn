@@ -34,3 +34,14 @@ case "google.com"
 default:
 	fmt.Println("dev")
 }
+
+
+/********Fallthrough********/
+/*
+switch letter {
+case ' ':
+case 'a', 'e', 'i', 'o', 'u':
+	fmt.Println("Vowels are great")
+default:
+	fmt.Println("It's something else")
+}
